@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         self.beginGameButton.titleLabel?.numberOfLines = 1
         self.beginGameButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
+    
     @IBAction func didGameBegin(_ sender: Any) {
         // check that both player names have been entered
         if !(playerOneName.text?.isEmpty ?? true) {
@@ -39,6 +40,11 @@ class ViewController: UIViewController {
         else {
             setErrorMessage(msg: "Please enter Player 1's name")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as? GameVC
+        destinationVC?.m_gameMgr = GameManager(acPlayerOne: Player(anName: self.playerOneName.text!), acPlayerTwo: Player(anName: self.playerTwoName.text!))
     }
     
     private func setErrorMessage(msg : String) {

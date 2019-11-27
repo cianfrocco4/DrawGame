@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9255909B23888FD400554523 /* GuessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9255909A23888FD400554523 /* GuessVC.swift */; };
+		9255909D23896C8500554523 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9255909C23896C8500554523 /* Player.swift */; };
+		925590A223896F8400554523 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925590A123896F8400554523 /* Game.swift */; };
+		92765373238772FE00D8F370 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92765372238772FE00D8F370 /* Item.swift */; };
 		929B0EFC233666280041F11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929B0EFB233666280041F11E /* AppDelegate.swift */; };
 		929B0EFE233666280041F11E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929B0EFD233666280041F11E /* ViewController.swift */; };
 		929B0F01233666280041F11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929B0EFF233666280041F11E /* Main.storyboard */; };
 		929B0F032336662B0041F11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929B0F022336662B0041F11E /* Assets.xcassets */; };
 		929B0F062336662B0041F11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929B0F042336662B0041F11E /* LaunchScreen.storyboard */; };
+		929B0F0E2337D1300041F11E /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929B0F0D2337D1300041F11E /* GameVC.swift */; };
+		929B0F16233817870041F11E /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929B0F15233817870041F11E /* GameManager.swift */; };
+		929B0F182338337E0041F11E /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929B0F172338337E0041F11E /* DrawVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9255909A23888FD400554523 /* GuessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessVC.swift; sourceTree = "<group>"; };
+		9255909C23896C8500554523 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		925590A123896F8400554523 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		92765372238772FE00D8F370 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		929B0EF8233666280041F11E /* DrawGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929B0EFB233666280041F11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929B0EFD233666280041F11E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,9 @@
 		929B0F022336662B0041F11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929B0F052336662B0041F11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929B0F072336662B0041F11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929B0F0D2337D1300041F11E /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		929B0F15233817870041F11E /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		929B0F172338337E0041F11E /* DrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9255909E23896EC600554523 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9255909A23888FD400554523 /* GuessVC.swift */,
+				929B0F172338337E0041F11E /* DrawVC.swift */,
+				929B0F0D2337D1300041F11E /* GameVC.swift */,
+				929B0EFD233666280041F11E /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9255909F23896EE800554523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				929B0F15233817870041F11E /* GameManager.swift */,
+				92765372238772FE00D8F370 /* Item.swift */,
+				9255909C23896C8500554523 /* Player.swift */,
+				925590A123896F8400554523 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		925590A023896F1000554523 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929B0EFF233666280041F11E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		929B0EEF233666280041F11E = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +98,10 @@
 		929B0EFA233666280041F11E /* DrawGame */ = {
 			isa = PBXGroup;
 			children = (
+				925590A023896F1000554523 /* View */,
+				9255909F23896EE800554523 /* Model */,
+				9255909E23896EC600554523 /* ViewControllers */,
 				929B0EFB233666280041F11E /* AppDelegate.swift */,
-				929B0EFD233666280041F11E /* ViewController.swift */,
-				929B0EFF233666280041F11E /* Main.storyboard */,
 				929B0F022336662B0041F11E /* Assets.xcassets */,
 				929B0F042336662B0041F11E /* LaunchScreen.storyboard */,
 				929B0F072336662B0041F11E /* Info.plist */,
@@ -96,6 +141,7 @@
 				TargetAttributes = {
 					929B0EF7233666280041F11E = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -136,7 +182,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				929B0EFE233666280041F11E /* ViewController.swift in Sources */,
+				925590A223896F8400554523 /* Game.swift in Sources */,
+				929B0F16233817870041F11E /* GameManager.swift in Sources */,
+				929B0F0E2337D1300041F11E /* GameVC.swift in Sources */,
+				929B0F182338337E0041F11E /* DrawVC.swift in Sources */,
+				9255909D23896C8500554523 /* Player.swift in Sources */,
+				92765373238772FE00D8F370 /* Item.swift in Sources */,
 				929B0EFC233666280041F11E /* AppDelegate.swift in Sources */,
+				9255909B23888FD400554523 /* GuessVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7HAUF9TT9;
 				INFOPLIST_FILE = DrawGame/Info.plist;
@@ -291,6 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acianfrocco.drawbeer.DrawGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7HAUF9TT9;
 				INFOPLIST_FILE = DrawGame/Info.plist;
